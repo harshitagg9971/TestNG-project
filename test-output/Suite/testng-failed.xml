@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="5" name="Test(failed)" parallel="classes">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.TESTActitimeLogin">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- test.TESTActitimeLogin -->
+      <class name="test.TESTActitimeCreateWork">
+        <methods>
+          <include name="createWork"/>
+        </methods>
+      </class> <!-- test.TESTActitimeCreateWork -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
